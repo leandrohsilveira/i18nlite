@@ -4,6 +4,6 @@ export type AvailableLanguages = 'en-us' | 'pt-br'
 
 export const languages: AvailableLanguages[] = ['en-us', 'pt-br']
 
-export const store = new I18nStore<AvailableLanguages>(languages[0])
+export const store = new I18nStore(languages[0])
 
 export const { useLanguage, useTranslate } = makeI18n(store)
