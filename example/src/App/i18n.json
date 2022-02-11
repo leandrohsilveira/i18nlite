@@ -1,0 +1,10 @@
+{
+  "en-us": {
+    "hello": "Hello {0}!",
+    "world": "world"
+  },
+  "pt-br": {
+    "hello": "Olá {0}!",
+    "world": "mundo"
+  }
+}
