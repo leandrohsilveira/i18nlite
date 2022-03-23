@@ -1,0 +1,8 @@
+{
+  "pt-br": {
+    "hello": "Olá {0}!"
+  },
+  "en-us": {
+    "hello": "Hello {0}!"
+  }
+}

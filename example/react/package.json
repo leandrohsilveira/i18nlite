@@ -1,0 +1,38 @@
+{
+  "name": "@i18nlite/example-react",
+  "homepage": ".",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@i18nlite/core": "file:../../dist/core",
+    "@i18nlite/react": "file:../../dist/react"
+  },
+  "devDependencies": {
+    "@i18nlite/testing": "file:../../dist/testing"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@i18nlite/core$": "<rootDir>/node_modules/i18nlite/core",
+      "^@i18nlite/react$": "<rootDir>/node_modules/i18nlite/react",
+      "^@i18nlite/testing$": "<rootDir>/node_modules/i18nlite/testing"
+    }
+  }
+}

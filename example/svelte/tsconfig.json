@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "target": "ESNext",
-    "module": "CommonJS",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
     "moduleResolution": "node",
-    "skipLibCheck": true,
     "sourceMap": true,
-    "declarationMap": true,
     "declaration": true,
     "esModuleInterop": true,
     "noImplicitReturns": true,
@@ -18,18 +15,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "jsx": "react"
+    "resolveJsonModule": true
   },
-  "exclude": [
-    "node_modules",
-    "**/node_modules",
-    "**/node_modules/*",
-    "dist",
-    "example",
-    "setupTests.ts",
-    "**/**.test.ts",
-    "**/**.test.tsx"
-  ]
+  "include": ["src/*", "src/**/*"]
 }

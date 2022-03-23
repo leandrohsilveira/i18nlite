@@ -1,0 +1,29 @@
+{
+  "name": "@i18nlite/core",
+  "version": "1.0.0",
+  "description": "A lightweight and simple i18n library (Core module)",
+  "author": {
+    "name": "Leandro Hinckel Silveira",
+    "email": "leandro.hinckel@gmail.com",
+    "url": "https://github.com/leandrohsilveira"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrohsilveira/i18nlite.git"
+  },
+  "bugs": {
+    "email": "leandro.hinckel@gmail.com",
+    "url": "https://github.com/leandrohsilveira/i18nlite/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "clean": "rm -Rf ../../dist/core",
+    "pretsc": "npm run clean",
+    "tsc": "tsc",
+    "build": "npm run tsc -- --project tsconfig.json",
+    "start": "npm run build -- --watch",
+    "test": "jest"
+  }
+}

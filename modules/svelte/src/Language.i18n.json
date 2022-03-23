@@ -1,0 +1,14 @@
+{
+  "pt-br": {
+    "language": "Linguagem",
+    "hello": "Olá {0}!",
+    "pt-br": "Português do Brasil",
+    "en-us": "Inglês dos EUA"
+  },
+  "en-us": {
+    "language": "Language",
+    "hello": "Hello {0}!",
+    "pt-br": "Brazillian Portuguese",
+    "en-us": "USA English"
+  }
+}

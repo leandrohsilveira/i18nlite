@@ -1,10 +1,11 @@
 {
-    "recommendations": [
-        "eamodio.gitlens",
-        "esbenp.prettier-vscode",
-        "mikehanson.auto-barrel",
-        "dbaeumer.vscode-eslint",
-        "orta.vscode-jest",
-        "richie5um2.vscode-sort-json"
-    ]
+  "recommendations": [
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "mikehanson.auto-barrel",
+    "dbaeumer.vscode-eslint",
+    "orta.vscode-jest",
+    "richie5um2.vscode-sort-json",
+    "folke.vscode-monorepo-workspace"
+  ]
 }

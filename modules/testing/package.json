@@ -1,0 +1,34 @@
+{
+  "name": "@i18nlite/testing",
+  "version": "1.0.0",
+  "description": "A lightweight and simple i18n library (Testing module)",
+  "author": {
+    "name": "Leandro Hinckel Silveira",
+    "email": "leandro.hinckel@gmail.com",
+    "url": "https://github.com/leandrohsilveira"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrohsilveira/react-i18n-lite.git"
+  },
+  "bugs": {
+    "email": "leandro.hinckel@gmail.com",
+    "url": "https://github.com/leandrohsilveira/react-i18n-lite/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "clean": "rm -Rf ../../dist/testing",
+    "pretsc": "npm run clean",
+    "tsc": "tsc",
+    "build": "npm run tsc -- --project tsconfig.json",
+    "start": "npm run build -- --watch"
+  },
+  "peerDependencies": {
+    "@i18nlite/core": "1.0.0"
+  },
+  "devDependencies": {
+    "@i18nlite/core": "file:../../dist/core"
+  }
+}
