@@ -11,11 +11,11 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
-    "@i18nlite/core": "file:../../dist/core",
-    "@i18nlite/svelte": "file:../../dist/svelte"
+    "@i18nlite/core": "file:../../modules/core/dist",
+    "@i18nlite/svelte": "file:../../modules/svelte/dist"
   },
   "devDependencies": {
-    "@i18nlite/testing": "file:../../dist/testing"
+    "@i18nlite/testing": "file:../../modules/testing/dist"
   },
   "browserslist": {
     "production": [

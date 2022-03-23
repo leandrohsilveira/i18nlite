@@ -10,11 +10,11 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@i18nlite/core": "file:../../dist/core",
-    "@i18nlite/react": "file:../../dist/react"
+    "@i18nlite/core": "file:../../modules/core/dist",
+    "@i18nlite/react": "file:../../modules/react/dist"
   },
   "devDependencies": {
-    "@i18nlite/testing": "file:../../dist/testing"
+    "@i18nlite/testing": "file:../../modules/testing/dist"
   },
   "browserslist": {
     "production": [

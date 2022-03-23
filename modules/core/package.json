@@ -16,10 +16,20 @@
     "email": "leandro.hinckel@gmail.com",
     "url": "https://github.com/leandrohsilveira/i18nlite/issues"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
-    "postinstall": "npm run build",
-    "clean": "rm -Rf ../../dist/core",
+    "clean": "rm -Rf ./dist",
     "pretsc": "npm run clean",
     "tsc": "tsc",
     "build": "npm run tsc -- --project tsconfig.json",

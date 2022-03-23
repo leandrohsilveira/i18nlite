@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { ChangeLanguage } from '.'
+import { ChangeLanguage } from './index'
 import i18n from './i18n.json'
 import { setLanguage } from '../config/testing'
 

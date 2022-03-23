@@ -1,22 +1,23 @@
-# react-i18n-lite
+# @i18nlite/react
 
 > A lightweight and simple i18n library for react
 
-[![NPM](https://img.shields.io/npm/v/react-i18n-lite.svg)](https://www.npmjs.com/package/react-i18n-lite) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@i18nlite/react.svg)](https://www.npmjs.com/package/@i18nlite/react)
 
 ## Install
 
 ```bash
-npm install --save react-i18n-lite
+npm install --save @i18nlite/core @i18nlite/react
 ```
 
 ## Usage
 
-### Configuration and hooks creation:
+### Configuration:
 
 `src/i18n.ts`:
 ```ts
-import { I18nStore, makeI18n } from 'react-i18n-lite'
+import { I18nStore } from '@i18nlite/core'
+import { makeI18n } from '@i18nlite/react'
 
 export type AvailableLanguages = 'en-us' | 'pt-br'
 
@@ -62,6 +63,20 @@ function App() {
 
 ### Reading and changing current language
 
+`src/ChangeLanguage.i18n.json`
+```json
+{
+  "en-us": {
+    "pt-br": "Brazillian Portuguese",
+    "en-us": "US English"
+  },
+  "pt-br": {
+    "pt-br": "Português Brasileiro",
+    "en-us": "Inglês EUA"
+  }
+}
+```
+
 `src/ChangeLanguage.tsx`:
 ```tsx
 import * as React from 'react'
@@ -96,25 +111,6 @@ export function ChangeLanguage() {
     </select>
   )
 }
-```
-
-### Persisting language in local storage:
-
-`src/i18n.ts`:
-```ts
-import { I18nStore, makeI18n } from 'react-i18n-lite'
-
-const STORAGE_KEY = 'app.lang'
-
-export type AvailableLanguages = 'en-us' | 'pt-br'
-
-export const languages: AvailableLanguages[] = ['en-us', 'pt-br']
-
-const store = new I18nStore(window.localStorage.getItem(STORAGE_KEY) ?? languages[0])
-
-store.subscribe(lang => window.localStorage.setItem(STORAGE_KEY, lang))
-
-export const { useLanguage, useTranslate } = makeI18n(store)
 ```
 
 ## License

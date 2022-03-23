@@ -16,10 +16,20 @@
     "email": "leandro.hinckel@gmail.com",
     "url": "https://github.com/leandrohsilveira/react-i18n-lite/issues"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
-    "postinstall": "npm run build",
-    "clean": "rm -Rf ../../dist/react",
+    "clean": "rm -Rf ./dist",
     "pretsc": "npm run clean",
     "tsc": "tsc",
     "build": "npm run tsc -- --project tsconfig.json",
@@ -30,7 +40,7 @@
     "@i18nlite/core": "1.0.0"
   },
   "devDependencies": {
-    "@i18nlite/core": "file:../../dist/core",
-    "@i18nlite/testing": "file:../../dist/testing"
+    "@i18nlite/core": "file:../core/dist",
+    "@i18nlite/testing": "file:../testing/dist"
   }
 }

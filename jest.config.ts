@@ -6,10 +6,10 @@ export default {
   coverageDirectory: 'coverage',
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   moduleNameMapper: {
-    '^@i18nlite/core$': '<rootDir>/dist/core',
-    '^@i18nlite/testing$': '<rootDir>/dist/testing',
-    '^@i18nlite/react$': '<rootDir>/dist/react',
-    '^@i18nlite/svelte$': '<rootDir>/dist/svelte',
+    '^@i18nlite/core$': '<rootDir>/modules/core/dist',
+    '^@i18nlite/testing$': '<rootDir>/modules/testing/dist',
+    '^@i18nlite/react$': '<rootDir>/modules/react/dist',
+    '^@i18nlite/svelte$': '<rootDir>/modules/svelte/dist',
   },
   transform: {
     '^.+\\.svelte$': [
