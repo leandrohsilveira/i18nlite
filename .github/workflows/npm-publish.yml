@@ -32,7 +32,7 @@ jobs:
       - run: npm run ci:module
       - run: npm run version:module
         env:
-          VERSION: $GITHUB_REF_NAME
+          VERSION: ${{ github.event.release.tag_name }}
       - run: npm run publish:module
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
