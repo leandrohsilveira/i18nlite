@@ -1,6 +1,6 @@
 {
   "name": "@i18nlite/react",
-  "version": "1.0.0",
+  "version": "next",
   "description": "A lightweight and simple i18n library for react",
   "author": {
     "name": "Leandro Hinckel Silveira",

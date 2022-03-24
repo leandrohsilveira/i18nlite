@@ -1,6 +1,6 @@
 {
   "name": "@i18nlite/core",
-  "version": "1.0.0",
+  "version": "next",
   "description": "A lightweight and simple i18n library (Core module)",
   "author": {
     "name": "Leandro Hinckel Silveira",

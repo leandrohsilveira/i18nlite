@@ -1,6 +1,6 @@
 {
   "name": "@i18nlite/svelte",
-  "version": "1.0.0",
+  "version": "next",
   "description": "A lightweight and simple i18n library for svelte",
   "author": {
     "name": "Leandro Hinckel Silveira",
@@ -44,11 +44,5 @@
   "devDependencies": {
     "@i18nlite/core": "file:../core/dist",
     "@i18nlite/testing": "file:../testing/dist"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "^@i18nlite/core$": "<rootDir>/node_modules/i18nlite/core",
-      "^@i18nlite/testing$": "<rootDir>/node_modules/i18nlite/testing"
-    }
   }
 }
