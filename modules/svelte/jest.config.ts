@@ -9,4 +9,14 @@ export default {
     '^@i18nlite/core$': '<rootDir>/node_modules/@i18nlite/core',
     '^@i18nlite/testing$': '<rootDir>/node_modules/@i18nlite/testing',
   },
+  transform: {
+    '^.+\\.svelte$': [
+      'svelte-jester',
+      {
+        preprocess: true,
+      },
+    ],
+    '^.+\\.ts$': 'ts-jest',
+  },
+  moduleFileExtensions: ['js', 'ts', 'svelte'],
 }
