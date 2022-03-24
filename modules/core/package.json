@@ -34,6 +34,6 @@
     "tsc": "tsc",
     "build": "npm run tsc -- --project tsconfig.json",
     "start": "npm run build -- --watch",
-    "test": "jest"
+    "test": "jest -c ./jest.config.ts"
   }
 }
