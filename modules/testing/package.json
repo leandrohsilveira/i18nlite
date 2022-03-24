@@ -35,7 +35,7 @@
     "start": "npm run build -- --watch"
   },
   "peerDependencies": {
-    "@i18nlite/core": "1.0.0"
+    "@i18nlite/core": "^1.0.0"
   },
   "devDependencies": {
     "@i18nlite/core": "file:../core/dist"
