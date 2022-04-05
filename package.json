@@ -64,6 +64,7 @@
     "start:example:svelte": "cd example/svelte && npm run start",
     "test": "npm run test:module",
     "test:module": "run-p -l test:module:*",
+    "test:module:core": "cd modules/core && npm test",
     "test:module:react": "cd modules/react && npm test",
     "test:module:svelte": "cd modules/svelte && npm test",
     "link:module": "run-p -l link:module:*",
