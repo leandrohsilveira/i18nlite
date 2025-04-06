@@ -5,7 +5,7 @@ name: Node.js Package
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
@@ -14,10 +14,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 22
       - run: npm ci
-      - run: npm run ci:module
-      - run: npm run test:module
+      - run: npm test
 
   publish-npm:
     needs: build
@@ -26,11 +25,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 22
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm run ci:module
-      - run: npm run version:module
+      - run: npm version $VERSION
         env:
           VERSION: ${{ github.event.release.tag_name }}
       - run: npm run publish:module
