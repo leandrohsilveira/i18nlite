@@ -1,0 +1,21 @@
+{
+  "name": "@examples/react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@i18nlite/core": "*",
+    "@i18nlite/react": "*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@i18nlite/testing": "*"
+  }
+}

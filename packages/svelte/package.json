@@ -1,0 +1,22 @@
+{
+  "name": "@i18nlite/svelte",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "source": "src/index.js",
+  "typings": "src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "@i18nlite/core": ">=0.0.0",
+    "svelte": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@i18nlite/testing": "*"
+  }
+}

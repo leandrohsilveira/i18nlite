@@ -2,34 +2,23 @@
   "compilerOptions": {
     "outDir": "dist",
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "sourceMap": true,
-    "declarationMap": true,
-    "declaration": true,
     "esModuleInterop": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "jsx": "react"
+    "checkJs": true
   },
   "exclude": [
     "node_modules",
     "**/node_modules",
     "**/node_modules/*",
-    "dist",
-    "example",
-    "setupTests.ts",
-    "**/**.test.ts",
-    "**/**.test.tsx"
+    "**/dist",
+    "**/.svelte-kit"
   ]
 }
