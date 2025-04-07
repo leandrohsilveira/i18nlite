@@ -4,7 +4,7 @@ import {
   languages,
   useLanguage,
   useTranslate,
-} from '../config'
+} from '../config/index.js'
 import i18n from './i18n.json'
 
 export function ChangeLanguage() {

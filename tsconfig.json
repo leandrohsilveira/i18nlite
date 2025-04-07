@@ -1,24 +1,31 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist",
     "target": "ESNext",
     "module": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "types": [
+      "@testing-library/jest-dom"
+    ],
+    "moduleResolution": "bundler",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
     "verbatimModuleSyntax": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "checkJs": true
+    "checkJs": true,
+    "allowJs": true
   },
   "exclude": [
     "node_modules",
     "**/node_modules",
     "**/node_modules/*",
-    "**/dist",
-    "**/.svelte-kit"
+    "**/dist"
   ]
 }

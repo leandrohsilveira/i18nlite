@@ -1,8 +1,8 @@
 /**
  * @import { Translator } from './types.js'
+ * @import { I18nStore } from './store.js'
  */
-import { formatText } from './format'
-import { I18nStore } from './store'
+import { formatText } from './format.js'
 
 /**
  * @template {string} Language

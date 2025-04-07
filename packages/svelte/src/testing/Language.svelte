@@ -1,13 +1,16 @@
 <script>
   import literals from './Language.i18n.json'
-  import { useLanguage, useTranslate } from './testing'
+  import { useLanguage, useTranslate } from '../testing/config.js'
 
   const t = useTranslate(literals)
   const [lang, changeLanguage] = useLanguage()
 
+  /**
+   * @param {Event} e
+   */
   function handleChangeLanguage(e) {
     const target = /** @type {HTMLSelectElement} */ (e.target)
-    changeLanguage(target.value)
+    changeLanguage(/** @type {*} */ (target.value))
   }
 </script>
 

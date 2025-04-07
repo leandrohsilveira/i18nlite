@@ -1,6 +1,6 @@
 import { I18nStore } from '@i18nlite/core'
 import { act, fireEvent, render, screen } from '@testing-library/react'
-import { makeI18n } from './hook'
+import { makeI18n } from './hook.js'
 import { beforeEach, describe, expect, test } from 'vitest'
 
 const _store = new I18nStore(['pt-br', 'en-us'], 'pt-br')

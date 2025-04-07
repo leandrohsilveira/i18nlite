@@ -8,15 +8,27 @@
   "main": "src/index.js",
   "module": "src/index.js",
   "source": "src/index.js",
-  "typings": "src/index.d.ts",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf ./types",
+    "build": "tsc -p ./tsconfig.lib.json",
+    "prepack": "npm run build"
+  },
   "files": [
-    "src"
+    "src",
+    "types",
+    "!src/setupTests.js",
+    "!src/*.test.js",
+    "!src/testing"
   ],
   "peerDependencies": {
     "@i18nlite/core": ">=0.0.0",
     "svelte": ">=3.0.0"
   },
-  "devDependencies": {
-    "@i18nlite/testing": "*"
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
   }
 }

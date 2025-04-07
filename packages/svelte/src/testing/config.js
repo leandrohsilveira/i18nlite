@@ -1,5 +1,5 @@
 import { I18nStore } from '@i18nlite/core'
-import { makeI18n } from './i18n'
+import { makeI18n } from '../i18n.js'
 
 /** @typedef {'pt-br' | 'en-us'} Languages */
 

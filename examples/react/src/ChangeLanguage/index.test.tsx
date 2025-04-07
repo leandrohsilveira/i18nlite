@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { ChangeLanguage } from './index'
+import { ChangeLanguage } from './index.js'
 import i18n from './i18n.json'
 import { describe, expect, test } from 'vitest'
-import { store } from '../config'
+import { store } from '../config/index.js'
 
 describe('ChangeLanguage component', () => {
   function setup() {

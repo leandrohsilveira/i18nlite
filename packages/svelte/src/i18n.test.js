@@ -1,8 +1,8 @@
 import { act, render, screen } from '@testing-library/svelte'
 import userEvent from '@testing-library/user-event'
-import literals from './Language.i18n.json'
-import Language from './Language.svelte'
-import { setLanguage, store } from './testing'
+import literals from './testing/Language.i18n.json'
+import Language from './testing/Language.svelte'
+import { setLanguage, store } from './testing/config.js'
 import { beforeEach, describe, expect, test } from 'vitest'
 
 describe('makeI18n maker', () => {

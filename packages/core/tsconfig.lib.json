@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "types"
+  },
+  "include": [
+    "src/*.js",
+    "src/*.ts",
+    "src/*.jsx",
+    "src/*.tsx",
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.jsx",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/testing/**",
+    "src/setupTests.ts",
+    "src/setupTests.js",
+    "src/*.test.js",
+    "src/*.test.ts",
+    "src/*.test.jsx",
+    "src/*.test.tsx",
+    "src/**/*.test.js",
+    "src/**/*.test.ts",
+    "src/**/*.test.jsx",
+    "src/**/*.test.tsx"
+  ]
+}

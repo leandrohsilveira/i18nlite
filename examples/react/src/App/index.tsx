@@ -1,5 +1,5 @@
-import { ChangeLanguage } from '../ChangeLanguage'
-import { useTranslate } from '../config/i18n'
+import { ChangeLanguage } from '../ChangeLanguage/index.js'
+import { useTranslate } from '../config/index.js'
 import i18n from './i18n.json'
 
 const App = () => {

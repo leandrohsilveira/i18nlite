@@ -9,14 +9,26 @@
   "module": "src/index.js",
   "source": "src/index.js",
   "typings": "src/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf ./types",
+    "build": "tsc -p ./tsconfig.lib.json",
+    "prepack": "npm run build"
+  },
   "files": [
-    "src"
+    "src",
+    "!src/setupTests.js",
+    "!src/*.test.js",
+    "!src/*.test.jsx",
+    "!src/testing"
   ],
   "peerDependencies": {
     "@i18nlite/core": ">=0.0.0",
     "react": ">=16.8.0"
   },
-  "devDependencies": {
-    "@i18nlite/testing": "*"
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
   }
 }

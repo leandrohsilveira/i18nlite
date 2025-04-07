@@ -5,7 +5,7 @@
     useLanguage,
     useTranslate,
     type AvailableLanguages,
-  } from './config'
+  } from './config.js'
 
   const t = useTranslate(literals)
   const [lang, changeLanguage] = useLanguage()
