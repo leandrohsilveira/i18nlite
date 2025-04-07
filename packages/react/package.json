@@ -1,0 +1,34 @@
+{
+  "name": "@i18nlite/react",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "source": "src/index.js",
+  "typings": "src/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf ./types",
+    "build": "tsc -p ./tsconfig.lib.json",
+    "prepack": "npm run build"
+  },
+  "files": [
+    "src",
+    "!src/setupTests.js",
+    "!src/*.test.js",
+    "!src/*.test.jsx",
+    "!src/testing"
+  ],
+  "peerDependencies": {
+    "@i18nlite/core": ">=0.0.0",
+    "react": ">=16.8.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@i18nlite/core",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "source": "src/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf ./types",
+    "build": "tsc -p ./tsconfig.lib.json",
+    "prepack": "npm run build"
+  },
+  "files": [
+    "src",
+    "types",
+    "!src/*.ts",
+    "!src/setupTests.js",
+    "!src/*.test.js",
+    "!src/testing"
+  ],
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  }
+}

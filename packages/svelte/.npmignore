@@ -1,0 +1,7 @@
+src/testing
+node_modules
+src/setupTests.js
+tsconfig.json
+vite.config.js
+svelte.config.js
+src/*.test.js
